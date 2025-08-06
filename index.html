@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #034694;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #034694;
+    }
+
+    footer {
+      background-color: #222;
+      color: #eee;
+      text-align: center;
+      padding: 10px;
+    }
+
+    a {
+      color: #034694;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .aspect-w-16 {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      /* 16:9 aspect ratio */
+    }
+
+    .aspect-h-9 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .aspect-w-16>iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rounded-lg {
+      border-radius: 40px;
+    }
+
+    .shadow-lg {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .bg-gradient-to-br {
+      background: linear-gradient(to bottom right, #f3f4f6, #bfdbfe);
+    }
+
+    .bg-gradient-to-r {
+      background: linear-gradient(to right, #1e3a8a, #4f46e5);
+    }
+
+    .text-gray-800 {
+      color: #1f2937;
+    }
+
+    .text-blue-800 {
+      color: #1e40af;
+    }
+
+    .text-blue-400 {
+      color: #60a5fa;
+    }
+
+    .text-white {
+      color: #ffffff;
+    }
+
+    .text-gray-700 {
+      color: #374151;
+    }
+
+    .text-gray-600 {
+      color: #4b5563;
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-100 to-blue-300 text-gray-800">
+  <!-- ...existing code... -->
+  <header
+    class="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-12 shadow-md flex flex-col md:flex-row items-center justify-between relative"
+    style="background-image: url('143643245.jpg'); background-size: cover; background-position: center;">
+    <!-- ...existing code... -->
+    <div class="flex-1 flex flex-col items-center md:items-start">
+      <h1 class="text-5xl font-extrabold drop-shadow-lg">SARAVANAN S</h1>
+      <p class="text-xl mt-3 opacity-90">Professional Cricketer & Certified Coach</p>
+    </div>
+    <img src="saro.jpg" alt="Saravanan S"
+      class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover mt-6 md:mt-0 md:ml-8 md:mr-7" />
+  </header>
+
+  <!-- About Me -->
+  <section class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg fade-in">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">About Me</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">I am a professional cricket player and certified coach with a
+      passion for developing talent. With years of playing experience and a track record of mentoring young athletes, I
+      bring energy and expertise to every training session.</p>
+  </section>
+
+  <!-- Dynamic Achievements Slider -->
+  <!-- Dynamic Achievements Slider -->
+  <section class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg fade-in">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">Achievements</h2>
+
+    <!-- Carousel Container -->
+    <div id="carouselExample" class="relative h-80 overflow-hidden rounded-lg"> <!-- h-80 for increased height -->
+      <!-- Slides -->
+      <div
+        class="carousel-slide hidden duration-700 ease-in-out w-full h-full flex items-center justify-center text-center"
+        data-carousel-item>
+        <img src="achievements.jpg" alt="Achievements" class="w-full h-full object-cover rounded-lg shadow-md" />
+      </div>
+
+      <div
+        class="carousel-slide hidden duration-700 ease-in-out w-full h-full flex items-center justify-center text-center"
+        data-carousel-item>
+        <img src="a3.jpg" alt="Victory Celebration" class="w-full h-full object-cover rounded-lg shadow-md" />
+      </div>
+      <div
+        class="carousel-slide hidden duration-700 ease-in-out w-full h-full flex items-center justify-center text-center"
+        data-carousel-item>
+        <img src="a4.jpg" alt="Team Training" class="w-full h-full object-cover rounded-lg shadow-md" />
+      </div>
+      <div
+        class="carousel-slide hidden duration-700 ease-in-out w-full h-full flex items-center justify-center text-center"
+        data-carousel-item>
+        <img src="a5.jpg" alt="Team Celebration" class="w-full h-full object-cover rounded-lg shadow-md" />
+      </div>
+      <div
+        class="carousel-slide hidden duration-700 ease-in-out w-full h-full flex items-center justify-center text-center"
+        data-carousel-item>
+        <img src="a1.jpg" alt="Player Training" class="w-full h-full object-cover rounded-lg shadow-md" />
+      </div>
+
+      <!-- Manual Controls -->
+      <button onclick="prevSlide()"
+        class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-1 rounded-full shadow">
+        ◀
+      </button>
+      <button onclick="nextSlide()"
+        class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-1 rounded-full shadow">
+        ▶
+      </button>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg fade-in">
+    <h2 class="text-3xl font-bold text-blue-800 mb-6">Skills & Expertise</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-blue-50 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold text-blue-800 mb-3">Playing Skills</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Batting Techniques & Strategy</li>
+          <li>• Bowling (Fast & Spin)</li>
+          <li>• Fielding & Wicket Keeping</li>
+          <li>• Match Analysis & Planning</li>
+        </ul>
+      </div>
+      <div class="bg-green-50 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold text-green-800 mb-3">Coaching Skills</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Youth Development Programs</li>
+          <li>• Technical Skill Training</li>
+          <li>• Mental Conditioning</li>
+          <li>• Team Building & Leadership</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Programs -->
+  <section class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg fade-in">
+    <h2 class="text-3xl font-bold text-blue-800 mb-6">Training Programs</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-lg text-center">
+        <div class="text-4xl mb-4">🏏</div>
+        <h3 class="text-xl font-semibold text-blue-800 mb-2">Beginner Program</h3>
+        <p class="text-gray-700">Basic techniques, rules, and fundamentals for new players</p>
+      </div>
+      <div class="bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-lg text-center">
+        <div class="text-4xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold text-green-800 mb-2">Advanced Training</h3>
+        <p class="text-gray-700">Specialized coaching for competitive players</p>
+      </div>
+      <div class="bg-gradient-to-br from-purple-100 to-purple-200 p-6 rounded-lg text-center">
+        <div class="text-4xl mb-4">🎯</div>
+        <h3 class="text-xl font-semibold text-purple-800 mb-2">Professional Prep</h3>
+        <p class="text-gray-700">Elite training for aspiring professional cricketers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="max-w-7xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg fade-in">
+    <h2 class="text-3xl font-bold text-blue-800 mb-6">OUR GOALS</h2>
+
+    <!-- Image Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Existing and Extra Photos -->
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 13.26.34_92c1a3b3.jpg" alt="Match Action"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.04.15_d4a457fc.jpg" alt="Team Photo"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.05.23_030fc788.jpg" alt="Coaching Camp"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.17.46_52fc64d6.jpg" alt="Training Session"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.17.46_3f87b05f.jpg" alt="Player Celebration"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.17.46_bbf3a5ca.jpg" alt="Match Highlights"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.17.47_5d3da577.jpg" alt="Celebration 1"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.17.47_b0a397d5.jpg" alt="Celebration 2"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.20.26_6bd0603e.jpg" alt="Team Energy"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.20.27_5a3ac9c5.jpg" alt="Game Moment"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.20.27_8ac95bc2.jpg" alt="Player Ready"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.20.27_93678761.jpg" alt="Pre-Match"
+          class="w-full h-full object-cover" />
+      </div>
+      <!-- Extra Images -->
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="WhatsApp Image 2025-08-06 at 14.48.48_e56863ad.jpg" alt="Team Talk"
+          class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="a2.jpg" alt="Trophy Moment" class="w-full h-full object-cover" />
+      </div>
+      <div class="aspect-[16/9] rounded-lg shadow-md overflow-hidden">
+        <img src="a1.jpg" alt="Training Focus" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <h2 class="text-2xl font-semibold text-blue-800 mt-12 mb-4">Video Highlights</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="aspect-[16/9] rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls autoplay muted>
+          <source src="VID-20250806-WA0007.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="aspect-[16/9] rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls autoplay muted>
+          <source src="VID-20250806-WA0008.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="aspect-[16/9] rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls autoplay muted>
+          <source src="VID-20250806-WA0009.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="aspect-[16/9] rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls autoplay muted>
+          <source src="a3.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg fade-in">
+    <h2 class="text-3xl font-bold text-blue-800 mb-6">Get In Touch</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+        <div class="space-y-3">
+          <p class="flex items-center text-gray-700">
+            <span class="mr-3">📧</span>
+            <span>saravanan.cricket@email.com</span>
+          </p>
+          <p class="flex items-center text-gray-700">
+            <span class="mr-3">📱</span>
+            <span>+91 87784 67724</span>
+          </p>
+          <p class="flex items-center text-gray-700">
+            <span class="mr-3">📍</span>
+            <span>Dindigul, Tamil Nadu, India</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Training Schedule</h3>
+        <div class="space-y-2 text-gray-700">
+          <p><strong>Weekdays:</strong> 6:00 AM - 9:00 AM, 4:00 PM - 7:00 PM</p>
+          <p><strong>Weekends:</strong> 7:00 AM - 12:00 PM</p>
+          <p><strong>Special Sessions:</strong> Available on request</p>
+          <!-- Inside the Contact Information div -->
+          <p class="flex items-center text-gray-700">
+            <strong>Follow us on Instagram:</strong>
+            <a href="https://www.instagram.com/prasiddhi_cricket_academy_dgl?utm_source=qr&igsh=dGJnOWZ4bHlxcjRh"
+              target="_blank" class="hover:underline text-blue-600">
+              @prasiddhi_cricket_academy_dgl
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-8 mt-12">
+    <p class="text-lg">&copy; 2024 Saravanan S - Professional Cricket Coach</p>
+    <p class="text-gray-400 mt-2">Developing Champions, One Player at a Time</p>
+  </footer>
+  <!-- Add this script just before </body> to speed up the achievements slider -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll('[data-carousel-item]');
+      let i = 0;
+      const show = idx => items.forEach((el, j) => el.classList.toggle('hidden', j !== idx));
+      show(i);
+      setInterval(() => show(i = ++i % items.length), 1000);
+    });
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('[data-carousel-item]');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.add('hidden');
+        slide.classList.remove('flex');
+        if (i === index) {
+          slide.classList.remove('hidden');
+          slide.classList.add('flex');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Auto-slide every 5 seconds
+    setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    // Initialize first slide
+    showSlide(currentSlide);
+  </script>
+</body>
+
+</html>
